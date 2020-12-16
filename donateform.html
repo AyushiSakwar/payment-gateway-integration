@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <title>donateform</title>
+    <style type="text/css">
+        .sign-up-form {
+            width: 450px;
+            box-shadow: 0 0 3px 0 rgba(255, 0, 0, 0.8);
+            background: #fff;
+            padding: 20px;
+            margin: 5% auto 0;
+            text-align: center;
+            border-radius: 25px;
+            opacity: 0.8;
+            margin-top: 10px;
+        }
+        
+        .sign-up-form h1 {
+            color: #002080 rgb(0, 32, 128) hsl(225, 100%, 25%);
+            margin-bottom: 30px;
+        }
+        
+        .input-box {
+            border-radius: 30px;
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            border: 1px solid #999;
+            outline: none;
+        }
+        
+        img {
+            width: 100px;
+            margin-top: -10px;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 20px;
+            opacity: 0.9;
+            background-image: url(pic1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: montserrat;
+            background-color: palegoldenrod;
+        }
+        
+        nav {
+            background: #002080 rgb(0, 32, 128) hsl(225, 100%, 25%);
+            height: 10%;
+            width: 100%;
+        }
+        
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        
+        nav ul li a {
+            color: white;
+            font-size: 18px;
+            padding: 7px 13px;
+            text-transform: uppercase;
+        }
+        
+        a.active,
+        a:hover {
+            background: black;
+            transition: 0.5s;
+        }
+        
+        .checkbtn {
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+        
+        #check {
+            display: none;
+        }
+        
+        @media (max-width:952px) {
+            label.logo {
+                font-size: 30px;
+                padding-left: 50px;
+            }
+            nav ul l a {
+                font-size: 16px;
+            }
+        }
+        
+        @media (max-width:858px) {
+            .checkbtn {
+                display: block;
+            }
+            ul {
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background: #2c3e50;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a {
+                font-size: 20px;
+            }
+            a:hover,
+            a.active {
+                background: none;
+                color: #0082e6;
+            }
+            #check:checked~ul {
+                left: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+			</label>
+        <label class="logo">Contribute</label>
+        <ul>
+            <li><a class="active" href="payment.html">Home</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="aboutus.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="sign-up-form">
+
+        <img src="../New folder/imgs/pay2.webp" style="height: 350px; width:300px;">
+        <h1>Spread Smiless!!!</h1>
+        <form>
+            <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GDjQXEabnZmR2h">
+            </script>
+        </form>
+
+
+        </script>
+    </div>
+</body>
+
+</html>
